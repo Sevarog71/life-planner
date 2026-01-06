@@ -1,0 +1,38 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Docker volumes
+postgres_data/
+bundle_cache/
+
+# Backend (Rails)
+backend/log/*
+backend/tmp/*
+backend/.byebug_history
+backend/coverage
+backend/db/*.sqlite3
+backend/db/*.sqlite3-*
+
+# Frontend (React/Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Claude Code
+# プランファイルをバージョン管理に含める場合は以下をコメントアウト
+# .claude/plans/*
+# !.claude/plans/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
