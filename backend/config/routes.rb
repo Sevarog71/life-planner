@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :life_events
       resources :annual_budgets
+      resource :simulation, only: [:show]
     end
   end
 end

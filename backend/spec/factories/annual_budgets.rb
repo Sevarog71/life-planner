@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :annual_budget do
-    year { 1 }
-    annual_income { "9.99" }
-    annual_expense { "9.99" }
-    notes { "MyText" }
+    sequence(:year) { |n| 2025 + n }
+    annual_income { 5000000 }
+    annual_expense { 3000000 }
+    notes { "テスト予算" }
   end
 end
